@@ -29,6 +29,10 @@
     background: #30527a; 
 }
 
+.text-blue{
+    color: var(--blue);
+}
+
 #nav{
     display: flex;
     flex-direction: column;
@@ -190,6 +194,33 @@ footer span a{
     width: 300px !important;
 }
 
+/* faq page */
+
+#faq{
+    background-color: var(--blue);
+    padding : 50px;
+}
+
+.faq-card{
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding : 15px;
+    background-color: var(--yellow);
+}
+
+.faq-card h1{
+    color : var(--blue);
+    text-align: center;
+    font-size: 40px;
+    padding: 10px !important;
+}
+
+.faq-card p{
+    color : gray;
+    padding: 10px 70px 10px 70px !important;
+    font-size: 20px;
+}
+
 
 @media only screen and (max-width: 600px) {
     #logo{
@@ -236,6 +267,19 @@ footer span a{
 
     .card #wblogo{
         width: 200px !important;
+    }
+
+    /* FAQ page */
+    .faq-card h1{
+        color : var(--blue);
+        text-align: center;
+        font-size: 18px;
+        font-weight: 800 !important;
+    }
+
+    .faq-card p{
+        font-size: 14px !important;
+        padding: 5px !important;
     }
   }
 
@@ -316,5 +360,12 @@ footer span a{
 
     .about-card p{
         text-align: center !important;
+    }
+
+    /* FAQ page */
+    .faq-card{
+        font-size: .5em !important;
+        padding: 20px !important;
+        border-radius: 100px !important;
     }
 }
