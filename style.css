@@ -150,6 +150,28 @@ footer span a{
     display: none;
 }
 
+/* ABOUT PAGE */
+
+#about-section{
+    height: 300px;
+    display: flex;
+    align-items: end;
+    padding : 15px;
+    background: url(img/wbteam.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#about-section h1,
+#about-section h3{
+    color : var(--yellow);
+}
+
+.card #wblogo{
+    width: 300px !important;
+}
+
+
 @media only screen and (max-width: 600px) {
     #logo{
         width: 60px !important;
@@ -183,6 +205,18 @@ footer span a{
 
     #about{
         padding : 30px !important;
+    }
+
+    /* about us page */
+
+    .about-card p{
+        text-align: center !important;
+        font-size: 14px !important;
+        padding: 5px !important;
+    }
+
+    .card #wblogo{
+        width: 200px !important;
     }
   }
 
@@ -223,6 +257,12 @@ footer span a{
     footer span a{
         display: unset;
     }
+
+    /* ABOUT PAGE */
+
+    #about-section{
+        height: 100vh;
+    }
 }
 
 @media only screen and (min-width: 1200px){
@@ -247,5 +287,15 @@ footer span a{
         text-align: center;
         padding : 40px;
         border-radius: 40px;
+    }
+
+    /* ABOUT PAGE */
+
+    #about-section{
+        font-size: 2em;
+    }
+
+    .about-card p{
+        text-align: center !important;
     }
 }
