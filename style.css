@@ -159,14 +159,14 @@ footer span a{
         text-align: center;
         margin-bottom: 20px;
         padding-top: 10px;
-        font-size: 40px;
+        font-size: 35px;
         font-weight: 800 !important;
     }
     
     .card p{
         color : gray;
         font-size: 20px;
-        padding: 5px 30px 5px 30px !important;
+        padding: 2px 20px 5px 20px !important;
     }
 
     .card a{
@@ -178,6 +178,10 @@ footer span a{
         display: block;
         border-radius: 20px;
         font-size: 18px;
+    }
+
+    #about{
+        padding : 30px !important;
     }
   }
 
