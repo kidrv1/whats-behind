@@ -10,6 +10,25 @@
     --yellow : #f9e01b
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;
+}
+   
+::-webkit-scrollbar-thumb {
+    background: var(--blue); 
+    border-radius: 10px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #30527a; 
+}
+
 #nav{
     display: flex;
     flex-direction: column;
