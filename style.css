@@ -97,13 +97,13 @@
     color : var(--blue);
     text-align: center;
     margin-bottom: 20px;
-    font-size: 70px;
+    font-size: 50px;
 }
 
 .card p{
     color : gray;
-    font-size: 30px;
     padding: 10px 70px 10px 70px !important;
+    font-size: 20px;
 }
 
 .card a{
@@ -114,6 +114,7 @@
     font-weight: bold;
     display: block;
     border-radius: 20px;
+    font-size: 30px;
 }
 
 .card section:nth-child(2){
@@ -229,8 +230,8 @@ footer span a{
         font-size: 2em;
     }
     .card{
-        font-size: 2em;
-        padding :30px;
+        font-size: 1em;
+        padding: 30px;
         border-radius: 100px;
     }
     #about {
@@ -242,7 +243,7 @@ footer span a{
     }
     .card a{
         margin-top: 100px;
-        width: 100%;
+        width: 80%;
         text-align: center;
         padding : 40px;
         border-radius: 40px;
