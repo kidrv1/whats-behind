@@ -1,0 +1,246 @@
+*{
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+:root{
+    --blue: #4a7ab0;
+    --yellow : #f9e01b
+}
+
+#nav{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--yellow);
+    padding: 30px;
+    align-items: center;
+}
+
+#nav-left{
+    width: 100%;
+    height: 70px;
+    position: relative;
+}
+
+#logo{
+    width: 70px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+
+#ham-menu{
+    width: 30px;
+    position: absolute;
+    top:50%;
+    transform: translate(0%,-50%);
+    cursor: pointer;
+}
+
+#nav-right{
+    margin-top: 15px;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    gap : 5px
+}
+
+#nav-right a{
+    text-decoration: none;
+    font-size: .9em;
+    margin-left: .8rem;
+    font-weight: bold;
+    color : var(--blue);
+}
+
+#menu-toggle:checked + #nav-right{
+    display: flex;
+}
+
+#hero-section{
+    height: 300px;
+    display: flex;
+    align-items: end;
+    padding : 15px;
+    background: url(img/jaekwb.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#hero-section h1,
+#hero-section h3{
+    color : var(--yellow);
+}
+
+#about{
+    background-color: var(--blue);
+    padding : 15px;
+    display: flex;
+    gap : 15px;
+    flex-direction: column;
+}
+.card{
+    flex : 1;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding : 15px;
+    background-color: var(--yellow);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card h1{
+    color : var(--blue);
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 70px;
+}
+
+.card p{
+    color : gray;
+    font-size: 30px;
+    padding: 10px 70px 10px 70px !important;
+}
+
+.card a{
+    text-decoration: none;
+    padding : 20px 50px;
+    background-color: var(--blue);
+    color : var(--yellow);
+    font-weight: bold;
+    display: block;
+    border-radius: 20px;
+}
+
+.card section:nth-child(2){
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#about > section{
+    display: inline-block;
+    height: 100%;
+}
+
+footer{
+    padding : 50px 15px 50px 15px;
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-logo{
+    width: 180px;
+    
+}
+
+footer span a{
+    text-decoration: none;
+    font-size: .9em;
+    margin-left: .8rem;
+    font-weight: bold;
+    color : var(--blue);
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    #logo{
+        width: 60px !important;
+    }
+
+    .card h1{
+        color : var(--blue);
+        text-align: center;
+        margin-bottom: 20px;
+        padding-top: 10px;
+        font-size: 40px;
+        font-weight: 800 !important;
+    }
+    
+    .card p{
+        color : gray;
+        font-size: 20px;
+        padding: 5px 30px 5px 30px !important;
+    }
+
+    .card a{
+        text-decoration: none;
+        padding : 25px 100px;
+        background-color: var(--blue);
+        color : var(--yellow);
+        font-weight: bold;
+        display: block;
+        border-radius: 20px;
+        font-size: 18px;
+    }
+  }
+
+@media only screen and (min-width: 600px) {
+    #nav-left > label{
+        display: none;
+    }
+    #logo{
+        position: unset;
+        transform : unset;
+    }
+    #nav{
+        flex-direction: unset;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #nav-right{
+        display: flex;
+        flex-direction: unset;
+        width: 100%;
+        align-items: center;
+        justify-content: end;
+        margin: unset;
+    }
+
+    #hero-section{
+        height: 100vh;
+    }
+
+    #about{
+        flex-direction: unset;
+    }
+
+    footer{
+        justify-content: space-between;
+    }
+
+    footer span a{
+        display: unset;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    #hero-section{
+        font-size: 2em;
+    }
+    .card{
+        font-size: 2em;
+        padding :30px;
+        border-radius: 100px;
+    }
+    #about {
+        gap : 100px;
+        padding : 100px;
+    }
+    .card {
+        padding : 50px;
+    }
+    .card a{
+        margin-top: 100px;
+        width: 100%;
+        text-align: center;
+        padding : 40px;
+        border-radius: 40px;
+    }
+}
