@@ -330,7 +330,7 @@ footer span a{
     .team-card h1{
         color : var(--blue);
         text-align: center;
-        font-size: 18px;
+        font-size: 25px;
         font-weight: 800 !important;
     }
 
@@ -338,6 +338,24 @@ footer span a{
         font-size: 14px !important;
         padding: 5px !important;
     }
+    
+    .team-card .team-details{
+        text-align: center !important;
+        display: block !important;
+        padding-bottom: 25px;
+    }
+    
+    .team-card .team-details h5{
+        font-size: 25px;
+        color: var(--blue);
+    }
+    
+    .team-card .team-details #hp  {
+        width: 200px;
+        height: 200px;
+        }
+    
+
   }
 
 @media only screen and (min-width: 600px) {
