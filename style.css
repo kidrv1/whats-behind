@@ -221,6 +221,50 @@ footer span a{
     font-size: 20px;
 }
 
+/* team page */
+
+#team{
+    background-color: var(--blue);
+    padding : 50px;
+}
+
+.team-card{
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding : 15px;
+    background-color: var(--yellow);
+}
+
+.team-card h1{
+    color : var(--blue);
+    text-align: center;
+    font-size: 40px;
+    padding: 10px !important;
+}
+
+.team-card p{
+    color : gray;
+    font-size: 20px;
+}
+
+.team-card .team-details{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.team-card .team-details h5{
+    font-size: 30px;
+    color: var(--blue);
+}
+
+
+
+.team-card .team-details #hp  {
+    width: 250px;
+    height: 250px;
+    }
+
 
 @media only screen and (max-width: 600px) {
     #logo{
@@ -278,6 +322,19 @@ footer span a{
     }
 
     .faq-card p{
+        font-size: 14px !important;
+        padding: 5px !important;
+    }
+
+    /* team page */
+    .team-card h1{
+        color : var(--blue);
+        text-align: center;
+        font-size: 18px;
+        font-weight: 800 !important;
+    }
+
+    .team-card p{
         font-size: 14px !important;
         padding: 5px !important;
     }
@@ -366,6 +423,12 @@ footer span a{
     .faq-card{
         font-size: .5em !important;
         padding: 20px !important;
+        border-radius: 100px !important;
+    }
+
+    /* team page */
+    .team-card{
+        font-size: .5em !important;
         border-radius: 100px !important;
     }
 }
