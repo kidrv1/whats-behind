@@ -263,8 +263,54 @@ footer span a{
 .team-card .team-details #hp  {
     width: 250px;
     height: 250px;
-    }
+}
 
+.team-card .team-details #hp1  {
+    width: 250px;
+    height: 250px;
+}
+
+/* Contact page */
+
+.social-card{
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding : 15px;
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: center !important;
+}
+
+.social-card .social-details .social-links{
+    display: flex !important;
+    align-items: center !important;
+}
+
+.social-card .social-details .social-links .social-logo #hp  {
+    width: 100px;
+    height: 100px;
+}
+
+.social-card .social-details .social-links .social-text a{
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none !important;
+    color: var(--blue);
+}
+
+
+.social-text{
+    padding-left: 100px;
+}
+
+
+.social-logo{
+    padding: 10px;
+}
+
+.social-links{
+    padding: 10px;
+}
 
 @media only screen and (max-width: 600px) {
     #logo{
@@ -353,8 +399,37 @@ footer span a{
     .team-card .team-details #hp  {
         width: 200px;
         height: 200px;
-        }
+    }
     
+    .social-links{
+        text-align: left !important;
+    }
+
+    .social-card .social-details .social-links .social-logo #hp  {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .social-card .social-details .social-links .social-text a{
+        font-size: 25px;
+        font-weight: bold;
+        text-decoration: none !important;
+        color: var(--blue);
+    }
+    
+    
+    .social-text{
+        padding-left: 10px;
+    }
+    
+    
+    .social-logo{
+        padding: 10px;
+    }
+    
+    .social-links{
+        padding: 10px;
+    }
 
   }
 
@@ -446,6 +521,12 @@ footer span a{
 
     /* team page */
     .team-card{
+        font-size: .5em !important;
+        border-radius: 100px !important;
+    }
+
+    /* contact page */
+    .social-card{
         font-size: .5em !important;
         border-radius: 100px !important;
     }
