@@ -190,6 +190,17 @@ footer span a{
     color : var(--yellow);
 }
 
+.about-card section a{
+    text-decoration: none;
+    padding : 20px 50px;
+    background-color: var(--blue);
+    color : var(--yellow);
+    font-weight: bold;
+    display: block;
+    border-radius: 20px;
+    font-size: 30px;
+}
+
 .card #wblogo{
     width: 300px !important;
 }
@@ -312,6 +323,27 @@ footer span a{
     padding: 10px;
 }
 
+/* archive page */
+
+.yt-vids{
+    display: flex;
+    justify-content: center !important;
+}
+
+.yt-vid-container{
+    padding: 15px 40px 15px 40px !important; 
+}
+
+.yt-vid-container iframe{
+    width: 320px;
+    height: 240px;
+}
+
+.archive-see-more{
+    display: flex;
+    justify-content: center;
+}
+
 @media only screen and (max-width: 600px) {
     #logo{
         width: 60px !important;
@@ -431,6 +463,22 @@ footer span a{
         padding: 10px;
     }
 
+    /* archive page */
+
+    .yt-vids{
+        display: block !important;
+        text-align: center !important;
+    }
+
+    .yt-vid-container{
+        padding: 15px !important;
+    }
+
+    .yt-vid-container iframe{
+        width: 220px;
+        height: 165px;
+    }
+
   }
 
 @media only screen and (min-width: 600px) {
@@ -510,6 +558,14 @@ footer span a{
 
     .about-card p{
         text-align: center !important;
+    }
+
+    .about-card section a{
+        margin-top: 50px;
+        width: 40%;
+        text-align: center;
+        padding: 40px;
+        border-radius: 40px;
     }
 
     /* FAQ page */
