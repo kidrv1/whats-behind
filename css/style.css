@@ -33,6 +33,10 @@
     color: var(--blue);
 }
 
+.bg-blue{
+    background-color: var(--blue);
+}
+
 #nav{
     display: flex;
     flex-direction: column;
@@ -47,12 +51,16 @@
     position: relative;
 }
 
-#logo{
-    width: 70px;
+#logoweb{
+    width: 40%;
     position: absolute;
     left: 50%;
     top:50%;
     transform: translate(-50%,-50%);
+}
+
+#logomobile{
+    display: none;
 }
 
 #ham-menu{
@@ -88,7 +96,7 @@
     display: flex;
     align-items: end;
     padding : 15px;
-    background: url(img/jaekwb.png) no-repeat;
+    background: url(../img/jaekwb.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -99,6 +107,14 @@
 }
 
 #about{
+    background-color: var(--blue);
+    padding : 15px;
+    display: flex;
+    gap : 15px;
+    flex-direction: column;
+}
+
+#about-team{
     background-color: var(--blue);
     padding : 15px;
     display: flex;
@@ -118,15 +134,13 @@
 
 .card h1{
     color : var(--blue);
-    text-align: center;
+    text-align: left;
     margin-bottom: 20px;
-    font-size: 50px;
+    white-space: nowrap;
 }
 
 .card p{
     color : gray;
-    padding: 10px 70px 10px 70px !important;
-    font-size: 20px;
 }
 
 .card a{
@@ -137,7 +151,6 @@
     font-weight: bold;
     display: block;
     border-radius: 20px;
-    font-size: 30px;
 }
 
 .card section:nth-child(2){
@@ -147,6 +160,11 @@
 }
 
 #about > section{
+    display: inline-block;
+    height: 100%;
+}
+
+#about-team > section{
     display: inline-block;
     height: 100%;
 }
@@ -180,7 +198,7 @@ footer span a{
     display: flex;
     align-items: end;
     padding : 15px;
-    background: url(img/wbteam.png) no-repeat;
+    background: url(../img/wbteam.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -198,7 +216,10 @@ footer span a{
     font-weight: bold;
     display: block;
     border-radius: 20px;
-    font-size: 30px;
+}
+
+.about-card p{
+    padding: 10px;
 }
 
 .card #wblogo{
@@ -232,18 +253,28 @@ footer span a{
     font-size: 20px;
 }
 
+#faq-section{
+    height: 300px;
+    display: flex;
+    align-items: end;
+    padding : 15px;
+    background: url(../img/faqpic.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 /* team page */
 
 #team{
     background-color: var(--blue);
-    padding : 50px;
+    padding : 50px 50px 0px 50px;
 }
 
 .team-card{
     margin-bottom: 15px;
     border-radius: 20px;
-    padding : 15px;
     background-color: var(--yellow);
+    padding: 20px !important;
 }
 
 .team-card h1{
@@ -251,6 +282,17 @@ footer span a{
     text-align: center;
     font-size: 40px;
     padding: 10px !important;
+    white-space: nowrap;
+}
+
+#team h5{
+    font-size: 30px;
+    color: var(--blue);
+}
+
+#team p{
+    color : gray;
+    font-size: 20px;
 }
 
 .team-card p{
@@ -258,27 +300,85 @@ footer span a{
     font-size: 20px;
 }
 
-.team-card .team-details{
+.card-team .team-details{
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
 }
 
-.team-card .team-details h5{
+.card-contact .team-details{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+#team .team-details{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.card-team .team-details h5{
     font-size: 30px;
     color: var(--blue);
 }
 
+.card-contact .team-details h5{
+    font-size: 30px;
+    color: var(--blue);
+}
 
-
-.team-card .team-details #hp  {
+#team .team-details #hp  {
     width: 250px;
     height: 250px;
 }
 
-.team-card .team-details #hp1  {
+.card-team .team-details #hp  {
     width: 250px;
     height: 250px;
+}
+
+.card-team .team-details #hp1  {
+    width: 250px;
+    height: 250px;
+}
+
+.card-team{
+    flex : 1;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding : 15px;
+    background-color: var(--yellow);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-team h1{
+    color : var(--blue);
+    text-align: left;
+    margin-bottom: 20px;
+    white-space: nowrap;
+}
+
+.card-team p{
+    color : gray;
+}
+
+.card-team a{
+    text-decoration: none;
+    padding : 20px 50px;
+    background-color: var(--blue);
+    color : var(--yellow);
+    font-weight: bold;
+    display: block;
+    border-radius: 20px;
+}
+
+.card-team section:nth-child(2){
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
 }
 
 /* Contact page */
@@ -323,6 +423,67 @@ footer span a{
     padding: 10px;
 }
 
+.social-media{
+    padding: 50px;
+}
+
+.social-media h5{
+    font-size: 30px;
+    color: var(--blue);
+}
+
+.social-icons{
+    padding-top: 10px;
+}
+
+.social-icons .icon i{
+    font-size: 35px !important;
+    padding-right: 10px;
+}
+
+
+.card-contact .team-details #hp  {
+    width: 250px;
+    height: 250px;
+}
+
+.card-contact .team-details #hp1  {
+    width: 250px;
+    height: 250px;
+}
+
+.card-contact{
+    flex : 1;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding : 15px;
+    background-color: var(--yellow);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-contact h1{
+    color : var(--blue);
+    text-align: left;
+    margin-bottom: 20px;
+    white-space: nowrap;
+}
+
+.card-contact p{
+    color : gray;
+}
+
+.card-contact a{
+    text-decoration: none;
+    color : var(--blue);
+}
+
+.card-contact section:nth-child(2){
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
 /* archive page */
 
 .yt-vids{
@@ -344,9 +505,34 @@ footer span a{
     justify-content: center;
 }
 
+.archive-see-more a{
+    text-align: center !important;
+}
+
+.archive-title{
+    text-align: center !important;
+}
+
+.footer2{
+    background-color: var(--yellow);
+    text-align: center;
+    padding-bottom: 50px !important;
+    color: var(--blue);
+    font-weight: bold;
+}
+
 @media only screen and (max-width: 600px) {
-    #logo{
+    #logomobile{
+        display: block;
         width: 60px !important;
+        position: absolute;
+        left: 50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+    }
+
+    #logoweb{
+        display: none;
     }
 
     .card h1{
@@ -373,10 +559,15 @@ footer span a{
         display: block;
         border-radius: 20px;
         font-size: 18px;
+        white-space: nowrap;
     }
 
     #about{
         padding : 30px !important;
+    }
+
+    #about-team{
+        padding : 10px 30px 10px 30px !important;
     }
 
     /* about us page */
@@ -405,34 +596,61 @@ footer span a{
     }
 
     /* team page */
-    .team-card h1{
+    .card-team h1{
         color : var(--blue);
         text-align: center;
         font-size: 25px;
         font-weight: 800 !important;
     }
 
-    .team-card p{
+    .card-team p{
         font-size: 14px !important;
         padding: 5px !important;
+        text-align: left;
     }
     
-    .team-card .team-details{
+    .card-team .team-details{
         text-align: center !important;
         display: block !important;
         padding-bottom: 25px;
     }
     
-    .team-card .team-details h5{
+    .card-team .team-details h5{
         font-size: 25px;
         color: var(--blue);
+        text-align: left;
+        padding: 5px !important;
     }
     
-    .team-card .team-details #hp  {
+    .card-contact .team-details #hp  {
         width: 200px;
         height: 200px;
     }
     
+    .card-contact p{
+        font-size: 14px !important;
+        padding: 5px !important;
+        text-align: left;
+    }
+    
+    .card-contact .team-details{
+        text-align: center !important;
+        display: block !important;
+        padding-bottom: 25px;
+    }
+    
+    .card-contact .team-details h5{
+        font-size: 25px;
+        color: var(--blue);
+        text-align: left;
+        padding: 5px !important;
+    }
+    
+    .card-contact .team-details #hp  {
+        width: 200px;
+        height: 200px;
+    }
+
     .social-links{
         text-align: left !important;
     }
@@ -463,6 +681,24 @@ footer span a{
         padding: 10px;
     }
 
+    .social-media{
+        padding: 0px;
+    }
+    
+    .social-media h5{
+        font-size: 30px;
+        color: var(--blue);
+    }
+    
+    .social-icons{
+        padding-top: 10px;
+    }
+    
+    .social-icons .icon i{
+        font-size: 25px !important;
+        padding-right: 5px;
+    }
+
     /* archive page */
 
     .yt-vids{
@@ -479,13 +715,21 @@ footer span a{
         height: 165px;
     }
 
+    .footer2{
+        font-size: 12px !important;
+    }
+
   }
 
 @media only screen and (min-width: 600px) {
     #nav-left > label{
         display: none;
     }
-    #logo{
+    #logoweb{
+        position: unset;
+        transform : unset;
+    }
+    #logomobile{
         position: unset;
         transform : unset;
     }
@@ -504,10 +748,14 @@ footer span a{
     }
 
     #hero-section{
-        height: 100vh;
+        height: 80vh;
     }
 
     #about{
+        flex-direction: unset;
+    }
+
+    #about-team{
         flex-direction: unset;
     }
 
@@ -522,7 +770,11 @@ footer span a{
     /* ABOUT PAGE */
 
     #about-section{
-        height: 100vh;
+        height: 80vh;
+    }
+
+    #faq-section{
+        height: 80vh;
     }
 }
 
@@ -533,21 +785,26 @@ footer span a{
     .card{
         font-size: 1em;
         padding: 30px;
-        border-radius: 100px;
+        border-radius: 50px;
+    }
+
+    .card-team {
+        font-size: 1em;
+        padding: 0px;
+        border-radius: 50px;
+    }
+
+    .card-contact {
+        font-size: 1em;
+        padding: 0px;
+        border-radius: 50px;
     }
     #about {
-        gap : 100px;
-        padding : 100px;
+        padding: 40px;
     }
-    .card {
-        padding : 50px;
-    }
-    .card a{
-        margin-top: 100px;
-        width: 80%;
-        text-align: center;
-        padding : 40px;
-        border-radius: 40px;
+
+    #about-team {
+        padding: 10px 50px 10px 50px;
     }
 
     /* ABOUT PAGE */
@@ -557,15 +814,11 @@ footer span a{
     }
 
     .about-card p{
-        text-align: center !important;
+        text-align: left !important;
     }
 
     .about-card section a{
         margin-top: 50px;
-        width: 40%;
-        text-align: center;
-        padding: 40px;
-        border-radius: 40px;
     }
 
     /* FAQ page */

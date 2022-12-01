@@ -6,19 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WHAT'S BEHIND</title>
     <link rel="icon" type="image/x-icon" href="../img/logo.png">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div id="nav">
       <div id="nav-left">
         <label for="menu-toggle">
-          <img src="../img/options.png" id="ham-menu" />
+          <img src="../img/options.png" id="ham-menu" loading="lazy"/>
         </label>
-        <img src="../img/logo.png" id="logo" />
+        <img src="img/logo.png" id="logomobile" loading="lazy"/>
+        <img src="img/logoweb.png" id="logoweb" loading="lazy"/>
       </div>
       <input type="checkbox" id="menu-toggle" style="display: none;" />
       <div id="nav-right">
-        <a href="../index.html">HOME</a>
+        <a href="index.html">HOME</a>
         <a href="about.html">ABOUT US</a>
         <a href="archive.html">ARCHIVE</a>
         <a href="team.html">TEAM</a>
@@ -30,7 +31,7 @@
       <div class="card about-card">
         <section>
           <br>
-          <h1>ARCHIVE</h1>
+          <h1 class="archive-title">ARCHIVE</h1>
           <div>
             <div class="yt-vids">
               <div class="yt-vid-container">
@@ -77,9 +78,9 @@
       </div>
     </div>
     <footer>
-      <img src="../img/textlogo.png" id="footer-logo">
+      <img src="../img/textlogo.png" id="footer-logo" loading="lazy">
       <span>
-        <a href="../index.html">HOME</a>
+        <a href="index.html">HOME</a>
         <a href="about.html">ABOUT US</a>
         <a href="archive.html">ARCHIVE</a>
         <a href="team.html">TEAM</a>
@@ -87,5 +88,8 @@
         <a href="contact.html">CONTACT US</a>
       </span>
     </footer>
+    <div class="footer2">
+      © WHATS BEHIND 2022 / BY JUAN MIGUEL CRUDO
+  </div>
   </body>
 </html>

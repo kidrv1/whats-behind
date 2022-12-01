@@ -6,20 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WHAT'S BEHIND</title>
     <link rel="icon" type="image/x-icon" href="../img/logo.png">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="bg-blue">
     <div id="nav">
         <div id="nav-left">
             <label for="menu-toggle">
-                <img src="../img/options.png" id="ham-menu"/>
+                <img src="../img/options.png" id="ham-menu" loading="lazy"/>
             </label>
-            <img src="../img/logo.png" id="logo"/>
+            <img src="img/logo.png" id="logomobile" loading="lazy"/>
+        <img src="img/logoweb.png" id="logoweb" loading="lazy"/>
         </div>
         <input type="checkbox" id="menu-toggle" style="display: none;"/>
 
         <div id="nav-right">
-            <a href="../index.html">HOME</a>
+            <a href="index.html">HOME</a>
             <a href="about.html">ABOUT US</a>
             <a href="archive.html">ARCHIVE</a>
             <a href="team.html">TEAM</a>
@@ -33,10 +34,14 @@
             <section>
                <h1>TEAM</h1>
             </section>
-        </div><br><br><br>
-        <div class="team-card">
+        </div>
+    </div>
+
+    <div id="about-team">
+            <div class="card-team">
+                <div class="card-team">
             <section class="team-details">
-                <div><img src="../img/1.png" alt="team" id="hp"/></div>
+                <div><img src="../img/claude.png" alt="team" id="hp" loading="lazy"/></div>
                 <div>
                     <h5>Claude Morales</h5>
                     <p>CEO / Director</p>
@@ -44,29 +49,34 @@
                 </div>
             </section>
         </div>
-        <div class="team-card">
+            </div>
+            <div class="card-team">
+                <section class="team-details">
+                    <div><img src="../img/cho.png" alt="team" id="hp" loading="lazy"/></div>
+                    <div>
+                        <h5>Cho</h5>
+                        <p>Chief Operating Officer</p>
+                        <p>whatsbehindeverything@gmail.com</p>
+                    </div>
+                </section>
+            </div>
+    </div>
+
+    <div id="about-team">
+        
+        <div class="card-team">
             <section class="team-details">
-                <div><img src="../img/4.png" alt="team" id="hp"/></div>
-                <div>
-                    <h5>Cho</h5>
-                    <p>Chief Operating Officer</p>
-                    <p>whatsbehindeverything@gmail.com</p>
-                </div>
-            </section>
+            <div><img src="../img/pao.png" alt="team" id="hp" loading="lazy"/></div>
+            <div>
+                <h5>Paulo Monteon</h5>
+                <p>Chief Marketing Officer</p>
+                <p>whatsbehindeverything@gmail.com</p>
+            </div>
+        </section>
         </div>
-        <div class="team-card">
+        <div class="card-team">
             <section class="team-details">
-                <div><img src="../img/3.png" alt="team" id="hp"/></div>
-                <div>
-                    <h5>Paulo Monteon</h5>
-                    <p>Chief Marketing Officer</p>
-                    <p>whatsbehindeverything@gmail.com</p>
-                </div>
-            </section>
-        </div>
-        <div class="team-card">
-            <section class="team-details">
-                <div><img src="../img/3.png" alt="team" id="hp"/></div>
+                <div><img src="../img/migs.png" alt="team" id="hp" loading="lazy"/></div>
                 <div>
                     <h5>Migs</h5>
                     <p>Creative Director</p>
@@ -74,13 +84,13 @@
                 </div>
             </section>
         </div>
-    </div>
+</div>
 
     <footer>
         <img src="../img/textlogo.png" id="footer-logo">
         
         <span>
-            <a href="../index.html">HOME</a>
+            <a href="index.html">HOME</a>
             <a href="about.html">ABOUT US</a>
             <a href="archive.html">ARCHIVE</a>
             <a href="team.html">TEAM</a>
@@ -88,5 +98,8 @@
             <a href="contact.html">CONTACT US</a>
         </span>
     </footer>
+    <div class="footer2">
+        © WHATS BEHIND 2022 / BY JUAN MIGUEL CRUDO
+    </div>
 </body>
 </html>
