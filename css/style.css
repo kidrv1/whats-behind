@@ -5,6 +5,10 @@
     font-family: Helvetica, sans-serif;
 }
 
+img{
+    content-visibility: auto;
+}
+
 :root{
     --blue: #4a7ab0;
     --yellow : #f9e01b
